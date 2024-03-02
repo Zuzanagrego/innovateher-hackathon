@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup>
 defineProps({
   msg: {
@@ -41,4 +42,3 @@ h3 {
     text-align: left;
   }
 }
-</style>
