@@ -1,0 +1,15 @@
+footer{
+    margin-top: 200px;
+    position: absolute;
+    background-color: var(--light-pink);
+    color: var(--main-pink);
+    border-top: 1px solid var(--main-pink);
+}
+
+.footer{
+    display: flex;
+}
+
+.fas{
+    color: var(--main-pink);
+}

@@ -1,0 +1,20 @@
+:root {
+  --bg: #fff;
+  --main-pink: #EF75B9;
+  --link-pink: #FFB3DA;
+  --light-pink: #FFCCEA;
+}
+
+[data-theme="light"] .hero-bg {
+  background-image: url(../assets/hero-pattern.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+[data-theme="dark"] {
+  --bg: #171a23;
+  --main-pink: #FF2ABA;
+  --link-pink: #EF75B9;
+  --light-pink: #FFCCEA;
+}
