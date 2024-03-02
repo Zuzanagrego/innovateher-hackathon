@@ -1,10 +1,16 @@
 footer{
     position: absolute;
     bottom: 0;
-    background-color: var(--link-pink);
-    border-top: 1px solid var(--main-pink);
+    background-color: var(--light-pink);
+    border-top: 2px solid var(--link-pink);
     width: 100%;
     min-height: 3rem;    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer{
@@ -16,8 +22,8 @@ footer{
 
 .fas, i, .fas::before{
     color: var(--main-pink);
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
     font-weight: 900;
     transition: 0.3s;
 
