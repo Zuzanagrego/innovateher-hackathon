@@ -10,7 +10,7 @@ defineProps({
 <template>
   <footer >
 <div class="footer">
-  <i class="fas fa-home"></i>
+    <i class="fas fa-home"></i>
     <i class="fas fa-search"></i>
     <i class="fas fa-briefcase"></i>
     <i class="fas fa-file"></i>
