@@ -1,0 +1,32 @@
+{
+    "certificates": [
+      {
+        "name": "Responsive Web Design",
+        "by": "FreeCodeCamp",
+        "level": "Beginner",
+        "depth": "Extensive",
+        "skills": "HTML, CSS",
+        "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+        "price": "Free"
+      },
+      {
+        "name": "JavaScript Algorithms and Data Structures",
+        "by": "FreeCodeCamp",
+        "level": "Beginner",
+        "depth": "Extensive",
+        "skills": "HTML, CSS, Javascript, OOP, API",
+        "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+        "price": "Free"
+      },
+      {
+        "name": "Front End Development Libraries",
+        "by": "FreeCodeCamp",
+        "level": "Intermediate",
+        "depth": "Extensive",
+        "skills": "CSS, Bootstrap, Sass, jQuery, React, Redux, ",
+        "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+        "price": "Free"
+      }
+    ]
+  }
+  
