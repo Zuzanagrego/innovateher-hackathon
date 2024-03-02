@@ -20,8 +20,9 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+  history: createWebHistory(import.meta.env.VITE_APP_BASE_PATH),
+  linkActiveClass: 'text-gray-300 font-bold',
+  routes,
 })
 
 export default router
