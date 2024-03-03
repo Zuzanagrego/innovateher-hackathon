@@ -22,7 +22,7 @@ defineProps({
   <div class="column">
     <RouterLink to="/search">
       <i class="fas fa-search"></i>
-      <h5>Search</h5> 
+      <h5>Professionals</h5>
     </RouterLink>
   </div>
   <div class="column">

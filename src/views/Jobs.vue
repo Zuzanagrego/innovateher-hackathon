@@ -2,7 +2,6 @@
   <h1>-- Job Opportunities --</h1>
   <div class="jobs page">
     <div class="job-filters">
-      Select A Skill:
       <div class="job-skills flex">
         <button @click="selectSkill('AWS')" :class="{ 'selected': selectedSkill === 'AWS' }" class="skill-bubble">AWS</button>
         <button @click="selectSkill('Azure')" :class="{ 'selected': selectedSkill === 'Azure' }" class="skill-bubble">Azure</button>
@@ -72,17 +71,16 @@
   border-radius: 12px;
 }
 
-/* Define font size for the job details */
+
 .job-details {
-  font-size: 12px; /* Adjust the font size as needed */
+  font-size: 12px;
 }
 
-/* Define the style for the selected button */
+
 .selected {
-  background-color: rgba(215, 167, 196, 0.81); /* Default color */
+  background-color: rgba(215, 167, 196, 0.81);
 }
 
-/* Define the style for the skill tags */
 .skill-tag {
   background-color: #e0e0e0;
   color: #333;

@@ -3,8 +3,9 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from "../views/Home.vue"
 import Profile from "../views/Profile.vue"
 import Learn from "../views/Learn.vue"
-import Search from "../views/Search.vue"
+import Employers from "../views/Search.vue"
 import Jobs from "../views/Jobs.vue"
+
 
 const routes = [
     {
@@ -20,7 +21,7 @@ const routes = [
         path: '/learn', component: Learn
     },
     {
-        path: '/search', component: Search
+        path: '/search', component: Employers
     }
 ]
 
