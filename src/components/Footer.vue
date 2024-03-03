@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <footer >
-<div class="footer">
+<div class="flex">
   <div class="column">
     <RouterLink to="/">
       <i class="fas fa-home"></i>
