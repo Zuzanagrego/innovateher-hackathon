@@ -4,6 +4,7 @@
 }
 
 .profile{
+    overflow-y: scroll;
     margin: 2rem 4rem;
     background-color: var(--white);
     border-radius: 40px;
@@ -17,6 +18,30 @@
 .profile-main img {
     border-radius: 100%;
     margin: 1rem 3rem;
+}
+
+.external-link-img {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    padding: 0px;
+}
+.external-links-list {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    margin: 5px;
+}
+.external-link {
+    display: flex;
+    height: 80px;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.page {
+    overflow-y: auto; /* or overflow-y: scroll; */
+    height: 100vh; /* Set the height to the viewport height */
 }
 
 @media (max-width: 566px) {
