@@ -1,8 +1,8 @@
 :root {
   --bg: rgba(255, 241, 247, 0.97);
   --main-pink: rgba(190, 0, 120, 0.81);
-  --link-pink: #FFB3DA;
-  --light-pink: #FFCCEA;
+  --link-pink: rgba(154, 109, 140, 0.69);
+  --light-pink: rgba(154, 109, 140, 0.69);
   --white: #fff;
 }
 
@@ -16,6 +16,6 @@
 [data-theme="dark"] {
   --bg: #171a23;
   --main-pink: rgba(255, 42, 180, 0.65);
-  --link-pink: #EF75B9;
-  --light-pink: #FFCCEA;
+  --link-pink: rgba(215, 167, 196, 0.81);
+  --light-pink: rgba(59, 48, 56, 0.69);
 }

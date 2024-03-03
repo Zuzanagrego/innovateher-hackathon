@@ -3,8 +3,17 @@ import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <h1>♥ SheConnects ♥</h1>
-  <RouterView />
-  <Footer/>
+  <div class="app-container">
+    <RouterView />
+    <Footer />
+  </div>
 </template>
 
+<style scoped>
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+</style>

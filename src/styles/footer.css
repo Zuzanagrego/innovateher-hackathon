@@ -40,13 +40,13 @@ footer .flex{
 }
 
 @media (max-width: 566px) {
-   footer{
-    bottom: 0;
-    top:unset;
-    border: none;
-    border-top: 1px solid var(--link-pink);
-   }
-   img {
-    display: none;
-   }
+    footer{
+        bottom: 0;
+        top:unset;
+        border: none;
+        border-top: 1px solid var(--link-pink);
+    }
+    img {
+        display: none;
+    }
 }
