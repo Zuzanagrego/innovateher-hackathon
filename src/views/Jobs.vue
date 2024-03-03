@@ -32,6 +32,24 @@
         <div>Intern/Entry/Junior/Senior</div>
         <div>Blurb about position</div>
       </div>
+      <div class="job-preview">
+        <h2>Title</h2>
+        <button class="skill-bubble">Skill</button>
+        <div>Intern/Entry/Junior/Senior</div>
+        <div>Blurb about position</div>
+      </div>
+      <div class="job-preview">
+        <h2>Title</h2>
+        <button class="skill-bubble">Skill</button>
+        <div>Intern/Entry/Junior/Senior</div>
+        <div>Blurb about position</div>
+      </div>
+      <div class="job-preview">
+        <h2>Title</h2>
+        <button class="skill-bubble">Skill</button>
+        <div>Intern/Entry/Junior/Senior</div>
+        <div>Blurb about position</div>
+      </div>
     </div>
   </div>
 </template>

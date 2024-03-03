@@ -1,8 +1,9 @@
 :root {
-  --bg: rgba(243, 215, 227, 0.97);
+  --bg: rgba(255, 241, 247, 0.97);
   --main-pink: rgba(190, 0, 120, 0.81);
   --link-pink: #FFB3DA;
   --light-pink: #FFCCEA;
+  --white: #fff;
 }
 
 [data-theme="light"] .hero-bg {

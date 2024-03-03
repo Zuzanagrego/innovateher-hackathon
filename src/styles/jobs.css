@@ -3,6 +3,11 @@
     color: var(--main-pink);
 }
 
+.job-list{
+    max-height: 500px;
+    overflow-y: auto;
+}
+
 .job-skills{
     justify-content: flex-start;
     margin: 1rem 0rem
