@@ -59,12 +59,12 @@ h5 {
 }
 
 html {
-  height: -webkit-fill-available;
+  /*height: -webkit-fill-available;*/
 }
 
 body {
   min-height: 100vh;
-  min-height: -webkit-fill-available;
+  /*min-height: -webkit-fill-available;*/
 }
 
 ::-webkit-scrollbar {

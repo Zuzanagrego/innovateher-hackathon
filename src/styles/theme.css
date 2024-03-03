@@ -7,7 +7,8 @@
 }
 
 [data-theme="light"] .hero-bg {
-  background-image: url(../assets/hero-pattern.webp);
+  /* was causing an error for some reason
+  background-image: url(../assets/hero-pattern.webp); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
