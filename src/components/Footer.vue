@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 defineProps({
   msg: {
     type: String,
@@ -11,24 +13,35 @@ defineProps({
   <footer >
 <div class="footer">
   <div class="column">
-    <i class="fas fa-home"></i>
-    <a>Home</a>
+    <RouterLink to="/">
+      <i class="fas fa-home"></i>
+      <h5>Home</h5>
+    </RouterLink>
   </div>
   <div class="column">
-    <i class="fas fa-search"></i>
-    <a>Search</a>
+    <RouterLink to="/search">
+      <i class="fas fa-search"></i>
+      <h5>Search</h5> 
+    </RouterLink>
   </div>
   <div class="column">
-    <i class="fas fa-briefcase"></i>
-    <a>Jobs</a>
+    <RouterLink to="/jobs">
+      <i class="fas fa-briefcase"></i>
+      <h5>Jobs</h5>
+    </RouterLink>
   </div>
   <div class="column">
-    <i class="fas fa-file"></i>
-    <a>Learn</a>
+    <RouterLink to="/learn">
+      <i class="fas fa-file"></i>
+      <h5>Learn</h5>
+    </RouterLink>
   </div>
   <div class="column">
-    <i class="fas fa-user"></i>
-    <a>Profile</a>
+    <RouterLink to="/profile">
+      <i class="fas fa-user"></i>
+      <h5>Profile</h5>
+    </RouterLink>
+    
   </div>
 </div>
   </footer>

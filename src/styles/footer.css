@@ -20,7 +20,7 @@ footer{
     align-content: center;
 }
 
-.fas, i, .fas::before{
+.fas, i, .fas::before, .column{
     color: var(--main-pink);
     padding: 0.5rem;
     font-size: 2rem;
