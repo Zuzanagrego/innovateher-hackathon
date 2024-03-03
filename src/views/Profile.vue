@@ -2,8 +2,7 @@
 </script>
 
 <template>
-  <h1>Profile</h1>
-  <div class="profile-wrapper">
+  <div class="profile-wrapper page">
     <div class="profile-main profile">
       <div class="flex">
         <img src="../assets/soft-girl-aesthetic.jpg"/>

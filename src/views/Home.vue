@@ -2,7 +2,8 @@
 </script>
 
 <template>
-  <h1>-- Our Mission --</h1>
+  <div class="page">
+    <h1>-- Our Mission --</h1>
   <p>
     We aim to create a space for women in tech to connect with other women
     in tech, network with employers, increase their skill set, and show off their
@@ -35,6 +36,8 @@
     Join vibrant discussions, forums, and events within our community. Participate in conversations, share insights,
     and contribute.
   </ul>
+  </div>
+  
 
 </template>
 

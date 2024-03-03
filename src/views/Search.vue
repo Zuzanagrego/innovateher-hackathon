@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>-- Employee Profiles --</h1>
-
     <form action="/search" method="GET" class="search-form">
       <label for="searchInput"></label>
       <div class="search-input">
@@ -33,6 +32,7 @@
   margin: 1rem 2rem;
   display: flex;
   gap: 10px;
+  margin-left: 2rem;
 }
 
 label {
@@ -44,7 +44,8 @@ input {
   padding: 10px;
   font-size: 16px;
   width: 200px;
-  border-radius: 8px;
+  border-radius: 24px;
+  padding: 2px 12px;
 }
 
 button {
@@ -54,7 +55,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 24px;
 }
 
 .profile-list {

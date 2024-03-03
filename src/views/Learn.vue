@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>-- Search Technical Courses --</h1>
-
     <form action="/search" method="GET" class="search-form">
       <label for="searchInput"></label>
       <div class="search-input">
