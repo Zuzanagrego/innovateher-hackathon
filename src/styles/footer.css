@@ -1,5 +1,6 @@
 footer{
     position: absolute;
+    font-family: "Monaco", monospace;
     bottom: 0;
     background-color: var(--light-pink);
     border-top: 2px solid var(--link-pink);

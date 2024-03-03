@@ -3,8 +3,7 @@ import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <h1>Header</h1>
+  <h1>♥ SheConnects ♥</h1>
   <RouterView />
   <Footer/>
 </template>
-
