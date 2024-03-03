@@ -44,6 +44,6 @@
 <style>
 ul,
 p {
-  margin: 1rem 1rem;
+  margin: 0rem 1rem;
 }
 </style>

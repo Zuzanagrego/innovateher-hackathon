@@ -1,6 +1,6 @@
 .profile-wrapper{
     margin-top: 6rem;
-    height: 80vh;
+    height: 50vh;
 }
 
 .profile{
@@ -9,6 +9,7 @@
     background-color: var(--white);
     border-radius: 40px;
     padding: 2rem 4rem;
+    margin-bottom: 6em;
 }
 
 .profile-main.flex {
