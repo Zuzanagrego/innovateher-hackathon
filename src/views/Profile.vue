@@ -16,15 +16,6 @@
       <h2>
         Certificate of attending InnovateHER Hackathon 2024
       </h2>
-      <h2>
-        Certificate of attending InnovateHER Hackathon 2024
-      </h2>
-      <h2>
-        Certificate of attending InnovateHER Hackathon 2024
-      </h2>
-      <h2>
-        Certificate of attending InnovateHER Hackathon 2024
-      </h2>
     </div>
   </div>
 </template>

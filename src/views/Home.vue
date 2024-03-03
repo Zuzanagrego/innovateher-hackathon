@@ -12,8 +12,6 @@
     to help their career aspirations. That said, this website is open to use by
     anyone!
   </p>
-
-  <h2>-- Features --</h2>
   <p>
     Our platform is designed with a range of features to cater to the unique needs of women in the tech industry. Here's what sets us apart:
   </p>
@@ -31,18 +29,21 @@
     Amplify your voice!
     <li><strong>Job Opportunities</strong></li>
     Explore job opportunities tailored to women in tech. Connect with companies actively seeking diverse talent.
-    <li><strong>Community Engagement</strong></li>
-    Join vibrant discussions, forums, and events within our community. Participate in conversations, share insights,
-    and contribute.
-    <li><strong>Resource Library</strong></li>
-    Access a comprehensive library of articles, research papers, and industry insights. Stay informed about the latest
-    trends.
     <li><strong>Welcoming Environment</strong></li>
     Our commitment to diversity and inclusion creates a welcoming space for all. While our focus is on supporting women
     in tech, everyone is invited to benefit from our resources and contribute to an inclusive tech community.
+    <li><strong>[COMING SOON] Community Engagement</strong></li>
+    Join vibrant discussions, forums, and events within our community. Participate in conversations, share insights,
+    and contribute.
   </ul>
   </div>
   
 
 </template>
 
+<style>
+ul,
+p {
+  margin: 1rem 1rem;
+}
+</style>
