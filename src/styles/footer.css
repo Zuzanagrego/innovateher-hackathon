@@ -46,7 +46,7 @@ footer .flex{
     border: none;
     border-top: 1px solid var(--link-pink);
    }
-   img {
+   .logo-img {
     display: none;
    }
 }
