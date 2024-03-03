@@ -16,7 +16,7 @@ const skills = [
         </template>
       </div>
     </div>
-    <div class="job-list">
+    <div class="job-list scroll">
       <div v-for="job in filteredJobs" :key="job.id" class="job-preview">
         <h2>{{ job.title }}</h2>
         <h3>{{ job.level }}</h3>
