@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <h1>-- Search Technical Courses --</h1>
 
     <form action="/search" method="GET" class="search-form">
@@ -31,6 +31,7 @@
 .search-input {
   display: flex;
   gap: 10px;
+  margin-left: 2rem;
 }
 
 label {
@@ -42,7 +43,8 @@ input {
   padding: 10px;
   font-size: 16px;
   width: 200px;
-  border-radius: 8px;
+  border-radius: 24px;
+  padding: 2px 12px;
 }
 
 button {
@@ -52,7 +54,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 24px;
 }
 
 .course-list {

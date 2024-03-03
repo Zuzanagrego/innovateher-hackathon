@@ -3,6 +3,8 @@ import Certificate from '@/components/Certificate.vue';
 </script>
 
 <template>
-  <h1>Certificates</h1>
-  <Certificate/>
+  <div class="page">
+    <Certificate/>
+  </div>
+  
 </template>
