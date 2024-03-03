@@ -6,7 +6,7 @@ footer{
     width: 100%;
     max-height: 6rem;
     background: rgb(255,147,210);
-    background: linear-gradient(180deg, rgba(255,147,210,1) 0%, rgba(255,213,237,1) 100%);
+    background: linear-gradient(180deg, rgba(211, 176, 195, 0.97) 0%, rgba(255,213,237,1) 100%);
     line-height: 0.5;
 }
 
