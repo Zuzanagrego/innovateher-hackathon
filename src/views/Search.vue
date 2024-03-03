@@ -63,6 +63,7 @@ button {
   margin: 1rem 2rem;
   max-height: 560px;
   overflow-y: auto;
+  height: 60vh;
 }
 
 .profile-preview {

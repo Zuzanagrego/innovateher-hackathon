@@ -7,7 +7,7 @@
     max-height: 800px;
     overflow-y: auto;
     margin-bottom: 6em;
-    height: 70vh;
+    height: 55vh;
 }
 .job-preview{
     border-top: 1px solid var(--light-pink);
