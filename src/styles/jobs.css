@@ -4,16 +4,53 @@
 }
 
 .job-list{
-    max-height: 500px;
+    max-height: 800px;
     overflow-y: auto;
+    margin-bottom: 6em;
+    height: 70vh;
 }
 
 .job-skills{
     justify-content: flex-start;
     margin: 1rem 0rem
+    
 }
 
 .job-preview{
     border-top: 1px solid var(--light-pink);
     padding: 20px 0;
+}
+
+.skill-bubble {
+    background-color: rgba(190, 0, 120, 0.81); /* Default color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/* Define font size for the job details */
+.job-details {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+/* Define the style for the selected button */
+.selected {
+    background-color: rgba(215, 167, 196, 0.81); /* Default color */
+}
+
+/* Define the style for the skill tags */
+.skill-tag {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 4px 8px;
+    margin-right: 4px;
+    border-radius: 8px;
+    font-size: 12px;
 }

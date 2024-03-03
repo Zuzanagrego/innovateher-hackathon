@@ -19,7 +19,7 @@ nav {
 
 body {
   margin: 0;
-  font-family: "Monaco", monospace;
+  font-family: "Menlo", monospace;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -40,28 +40,57 @@ a {
 h1 {
   color: var(--main-pink);
   text-align: center;
-  margin-top: 0.25rem;
-  margin-bottom: 0.5rem;
+  margin-top: 7rem; /* Move margin to the top */
+  margin-bottom: 1rem; /* Move margin to the top */
 }
 
-h2,
+h2 {
+  color: var(--main-pink);
+  margin-top: 1rem; /* Move margin to the top */
+  margin-bottom: 1rem; /* Move margin to the top */
+}
+
 h3,
 h4,
 h5 {
   color: var(--main-pink);
-  margin-top: 0.25rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; /* Move margin to the top */
+  margin-bottom: 0.25rem; /* Move margin to the top */
 }
 
 html {
-  height: -webkit-fill-available; 
+  /*height: -webkit-fill-available;*/
 }
 
 body {
   min-height: 100vh;
-  min-height: -webkit-fill-available;
+  /*min-height: -webkit-fill-available;*/
 }
 
-p{
-  padding: 1rem;
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-pink);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-pink);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-pink);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-pink);
 }

@@ -1,0 +1,25 @@
+.profile{
+    margin: 2rem 4rem;
+    background-color: var(--white);
+    border-radius: 40px;
+    padding: 2rem 4rem;
+}
+
+.profile-main.flex {
+    justify-content: flex-start;
+}
+
+.profile-main img {
+    border-radius: 100%;
+    margin: 1rem 3rem;
+}
+
+@media (max-width: 566px) {
+    .profile, .profile-main .flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .profile-main img{
+        margin: 0;
+    }
+}
