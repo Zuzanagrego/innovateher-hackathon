@@ -39,7 +39,7 @@ export default {
   data() {
     let sel = {};
     for (const skill of skills) {
-      sel[skill] = true;
+      sel[skill] = false;
     }
     return {
       selected: sel,
@@ -102,15 +102,21 @@ export default {
   computed: {
     filteredJobs() {
       let filtered = [];
-      for (const job of this.jobs) {
-        for (const [sk, sel] of Object.entries(this.selected)) {
-          if (sel) {
+      let noMatch = false;
+      for (const [sk, sel] of Object.entries(this.selected)) {
+        if (sel) {
+          for (const job of this.jobs) {
             if (job.skills.includes(sk)) {
               filtered.push(job);
               break;
             }
           }
+          // no match.
+          noMatch = true;
         }
+      }
+      if (!noMatch && filtered.length === 0) {
+        return this.jobs;
       }
       return filtered;
     },
@@ -177,3 +183,8 @@ export default {
   font-size: 12px;
 }
 </style>
+
+      }
+      // if nothing is filtered, everything is shown.
+      if (!noMatch && filtered.length === 0) {
+        return this.jobs;
