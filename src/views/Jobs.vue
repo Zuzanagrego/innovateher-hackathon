@@ -1,24 +1,19 @@
+<script setup>
+const skills = [
+  "AWS", "Azure", "C", "C++", "CSS", "HTML", "Javascript", "NLP", "Pytorch", "Python", "React", "R", "Ruby", "SQL", "TCP/IP", "TensorFlow"
+];
+</script>
+
 <template>
   <h1>-- Job Opportunities --</h1>
   <div class="jobs page">
     <div class="job-filters">
       <div class="job-skills flex">
-        <button @click="selectSkill('AWS')" :class="{ 'selected': selectedSkill === 'AWS' }" class="skill-bubble">AWS</button>
-        <button @click="selectSkill('Azure')" :class="{ 'selected': selectedSkill === 'Azure' }" class="skill-bubble">Azure</button>
-        <button @click="selectSkill('C')" :class="{ 'selected': selectedSkill === 'C' }" class="skill-bubble">C</button>
-        <button @click="selectSkill('C++')" :class="{ 'selected': selectedSkill === 'C++' }" class="skill-bubble">C++</button>
-        <button @click="selectSkill('CSS')" :class="{ 'selected': selectedSkill === 'CSS' }" class="skill-bubble">CSS</button>
-        <button @click="selectSkill('HTML')" :class="{ 'selected': selectedSkill === 'HTML' }" class="skill-bubble">HTML</button>
-        <button @click="selectSkill('Javascript')" :class="{ 'selected': selectedSkill === 'Javascript' }" class="skill-bubble">Javascript</button>
-        <button @click="selectSkill('NLP')" :class="{ 'selected': selectedSkill === 'NLP' }" class="skill-bubble">NLP</button>
-        <button @click="selectSkill('PyTorch')" :class="{ 'selected': selectedSkill === 'PyTorch' }" class="skill-bubble">PyTorch</button>
-        <button @click="selectSkill('Python')" :class="{ 'selected': selectedSkill === 'Python' }" class="skill-bubble">Python</button>
-        <button @click="selectSkill('React')" :class="{ 'selected': selectedSkill === 'React' }" class="skill-bubble">React</button>
-        <button @click="selectSkill('R')" :class="{ 'selected': selectedSkill === 'R' }" class="skill-bubble">R</button>
-        <button @click="selectSkill('Ruby')" :class="{ 'selected': selectedSkill === 'Ruby' }" class="skill-bubble">Ruby</button>
-        <button @click="selectSkill('SQL')" :class="{ 'selected': selectedSkill === 'SQL' }" class="skill-bubble">SQL</button>
-        <button @click="selectSkill('TCP/IP')" :class="{ 'selected': selectedSkill === 'TCP/IP' }" class="skill-bubble">TCP/IP</button>
-        <button @click="selectSkill('TensorFlow')" :class="{ 'selected': selectedSkill === 'TensorFlow' }" class="skill-bubble">TensorFlow</button>
+        <template v-for="skill in skills">
+          <button @click="selectSkill(skill)" 
+            :class="{ 'selected': selected[skill] === true }" 
+            class="skill-bubble">{{ skill }}</button>
+        </template>
       </div>
     </div>
     <div class="job-list">
@@ -36,66 +31,18 @@
   </div>
 </template>
 
-<style>
-.job-filters{
-  font-size: 24px;
-  color: var(--main-pink);
-}
-
-.job-list{
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.job-skills{
-  justify-content: flex-start;
-  margin: 1rem 0rem
-}
-
-.job-preview{
-  border-top: 1px solid var(--light-pink);
-  padding: 20px 0;
-}
-
-.skill-bubble {
-  background-color: rgba(190, 0, 120, 0.81); /* Default color */
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 24px;
-}
-
-
-.job-details {
-  font-size: 12px;
-}
-
-
-.selected {
-  background-color: rgba(215, 167, 196, 0.81);
-}
-
-.skill-tag {
-  background-color: #e0e0e0;
-  color: #333;
-  padding: 4px 8px;
-  margin-right: 4px;
-  border-radius: 8px;
-  font-size: 12px;
-}
-</style>
-
 <script>
+const skills = [
+  "AWS", "Azure", "C", "C++", "CSS", "HTML", "Javascript", "NLP", "Pytorch", "Python", "React", "R", "Ruby", "SQL", "TCP/IP", "TensorFlow"
+];
 export default {
   data() {
+    let sel = {};
+    for (const skill of skills) {
+      sel[skill] = true;
+    }
     return {
-      selectedSkill: null,
+      selected: sel,
       jobs: [
         { id: 1,
           title: 'Software Engineer',
@@ -154,16 +101,79 @@ export default {
   },
   computed: {
     filteredJobs() {
-      if (!this.selectedSkill) {
-        return this.jobs;
+      let filtered = [];
+      for (const job of this.jobs) {
+        for (const [sk, sel] of Object.entries(this.selected)) {
+          if (sel) {
+            if (job.skills.includes(sk)) {
+              filtered.push(job);
+              break;
+            }
+          }
+        }
       }
-      return this.jobs.filter(job => job.skills.includes(this.selectedSkill));
+      return filtered;
     },
   },
   methods: {
     selectSkill(skill) {
-      this.selectedSkill = skill;
+      this.selected[skill] = !this.selected[skill];
     },
   },
 };
+
 </script>
+<style>
+.job-filters{
+  font-size: 24px;
+  color: var(--main-pink);
+}
+
+.job-list{
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.job-skills{
+  justify-content: flex-start;
+  margin: 1rem 0rem
+}
+
+.job-preview{
+  border-top: 1px solid var(--light-pink);
+  padding: 20px 0;
+}
+
+.skill-bubble {
+  background-color: rgba(190, 0, 120, 0.81); /* Default color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+
+.job-details {
+  font-size: 12px;
+}
+
+
+.selected {
+  background-color: rgba(215, 167, 196, 0.81);
+}
+
+.skill-tag {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 4px 8px;
+  margin-right: 4px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+</style>
