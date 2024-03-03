@@ -4,14 +4,16 @@
 }
 
 .job-list{
-    max-height: 500px;
+    max-height: 800px;
     overflow-y: auto;
-    margin-bottom: 6rem;
+    margin-bottom: 6em;
+    height: 70vh;
 }
 
 .job-skills{
     justify-content: flex-start;
     margin: 1rem 0rem
+    
 }
 
 .job-preview{

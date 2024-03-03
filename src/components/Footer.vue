@@ -12,6 +12,7 @@ defineProps({
 <template>
   <footer >
 <div class="flex">
+  <img src="../assets/android-chrome-512x512.png"/>
   <div class="column">
     <RouterLink to="/">
       <i class="fas fa-home"></i>
