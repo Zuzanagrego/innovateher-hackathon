@@ -5,7 +5,7 @@
     padding: 2rem 4rem;
 }
 
-.profile-main .flex {
+.profile-main.flex {
     justify-content: flex-start;
 }
 
