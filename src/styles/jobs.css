@@ -1,0 +1,14 @@
+.job-filters{
+    font-size: 24px;   
+    color: var(--main-pink);
+}
+
+.job-skills{
+    justify-content: flex-start;
+    margin: 1rem 0rem
+}
+
+.job-preview{
+    border-top: 1px solid var(--light-pink);
+    padding: 20px 0;
+}

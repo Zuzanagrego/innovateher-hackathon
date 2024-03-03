@@ -1,0 +1,23 @@
+.page{
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.skill-bubble{
+    border: 1px solid var(--link-pink);
+    padding: 4px 16px;
+    border-radius: 20px;
+    background-color: var(--bg);
+    margin-right: 1rem;
+}
