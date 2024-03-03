@@ -19,7 +19,7 @@ nav {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Monaco", monospace;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -36,7 +36,13 @@ a {
   background-color: transparent;
 }
 
-h1,
+h1 {
+  color: var(--main-pink);
+  text-align: center;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
 h2,
 h3,
 h4,
